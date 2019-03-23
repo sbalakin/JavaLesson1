@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);//Подключаем файл с интерфейсом (лейоут)
+        setContentView(R.layout.activity_main);//Подключаем файл с интерфейсом (лейоут activity_main.xml)
         button = findViewById(R.id.button); //Находим там кнопку
         textView = findViewById(R.id.textView); //Находим текст
 
@@ -26,11 +26,17 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    void myAmazingMethod(){//это наш изумительный метод
+    void myAmazingMethod(){//это мы объявили наш изумительный метод
+        //здесь начало метода
+
         String result = "Что-то новенькое"; //создаем текстовую строчку и присваиваем ей значение "Что-то новенькое"
 
 
         textView.setText(result);//Отображаем на нашей TextView текстовую строчку result
+
+
+        //здесь конец метода
     }
 
 }
+
